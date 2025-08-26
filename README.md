@@ -1,0 +1,1 @@
+Simple DLL injector. It injects a dll to target process using LoadLibrary, a function provided by the windows api and loads a library module into the address space of the calling process and returns a handle to the module.
