@@ -8,7 +8,7 @@ DWORD GetProcId(const char* procName)
 
     
     // Find the window of the game
-    HWND acWindow = FindWindow(nullptr, "Cube 2: Sauerbraten");
+    HWND acWindow = FindWindow(nullptr, "Enter Window Name Here");
     if (acWindow == NULL) {
         std::cout << "Failed to find game window." << std::endl;
         return 0;
@@ -25,8 +25,8 @@ DWORD GetProcId(const char* procName)
 
 int main()
 {
-    const char* dllPath = "C:\\Users\\louko\\Desktop\\kurwa\\kurwa\\x64\\Debug\\kurwa.dll";
-    const char* procName = "sauerbraten.exe";
+    const char* dllPath = "C:\\ENTER PATH TO DLL HERE";
+    const char* procName = "Enter process name here";
 
     DWORD processId = GetProcId(procName);
     if (processId == 0) {
@@ -80,4 +80,5 @@ int main()
     CloseHandle(hProc);
 
     return 0;
+
 }
